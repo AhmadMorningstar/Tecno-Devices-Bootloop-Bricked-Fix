@@ -26,7 +26,7 @@ This guide provides simple, step-by-step instructions to fix Tecno devices that 
 
 The Fastboot tool is essential for sending the new firmware files to your phone in the final steps.
 
-1.  **Download the Installer:** Download the **15 Seconds ADB Installer** from the official source: [Link to ADB Installer](https://androidmtk.com/download-15-seconds-adb-installer).
+1.  **Download the Installer:** Download the **15 Seconds ADB Installer 1.5.6(Latest)** from the official source: [Link to ADB Installer](https://androidmtk.com/download-15-seconds-adb-installer).
 2.  **Run Installer:** Run the downloaded executable file as admin.
 3.  **Confirm Installation:** When the Command Prompt window appears asking `Y/N?`, type **Y** and press **Enter** for every prompt to install ADB, Fastboot, and the drivers.
 4.  **Finish:** Once complete, you can safely close the window and proceed to the next part.
