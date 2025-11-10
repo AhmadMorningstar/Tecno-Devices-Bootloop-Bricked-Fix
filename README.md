@@ -1,6 +1,14 @@
 # 🛠️ EASY FIX GUIDE: Unbrick and Restore Tecno Devices (MTK Bypass Method) 📱
 
-This guide provides simple, step-by-step instructions to fix Tecno devices that are **stuck in a boot loop** or completely **bricked** (not turning on) by using a special security bypass method.
+This guide provides simple, step-by-step instructions to fix Tecno devices that are **stuck in a boot loop** or completely **bricked** (not turning on) by using a special **MediaTek (MTK) security bypass** method.
+
+---
+
+## ⚠️ GENERAL DISCLAIMER
+
+> **I do not own or host any of the files linked in this guide.** All linked software and firmware files (drivers, tools, ROMs) belong to their respective creators and manufacturers.
+>
+> **You follow this guide entirely at your own risk.** Although this is a fixing guide, working with device firmware and security bypass tools carries inherent risks, including the potential to further damage your device. **I am not responsible for any damage, data loss, or bricking that may occur.**
 
 ---
 
@@ -8,26 +16,26 @@ This guide provides simple, step-by-step instructions to fix Tecno devices that 
 
 * **Use a Fresh Computer:** If you run into problems, it is highly recommended to try this process on a different computer, ideally one with a **fresh install of Windows 11**.
 * **Security Check:** We will be installing special drivers and using tools that Windows might block. **It is highly recommended** to:
-    * **Turn off Windows Defender/Antivirus completely.**
+    * **Turn off Windows Defender/Antivirus** completely.
     * **Disable Driver Signature Enforcement** (A guide for this super easy step can be followed here: **[Link to Guide]**).
     * **Do not use a computer with personal or sensitive files** for this process.
 
 ---
 
-## Part 1: Get Ready (Files and Tools)
+## Part 1: Get Ready (Files and Tools) 📦
 
 Here are the files and tools you need to download and have ready on your computer:
 
-* **Drivers:** **Signed MTK Drivers** ([link])
-    * **Note:** You must install **both files** that come in the driver package.
-* **Bypass Tools:**
-    * **MTK AUTH Bypass Tool V7** ([link])
-    * **MTK AUTH Bypass Tool V30** ([link])
-* **Original Phone Software:** **Tecno Stock Firmware/ROM** files (Make absolutely sure these are for your **exact** phone model).
+| Type | Item | Download Link | Notes |
+| :--- | :--- | :--- | :--- |
+| **Drivers** | **Signed MTK Drivers** | **[link]** | You **must** install **both files** that come in the driver package. |
+| **Bypass Tool** | **MTK AUTH Bypass Tool V7** | **[link]** | Used to temporarily **crash** the phone's security. |
+| **Bypass Tool** | **MTK AUTH Bypass Tool V30** | **[link]** | Used to **reboot** the crashed phone into **Fastboot Mode**. |
+| **Software** | **Tecno Stock Firmware/ROM** | *(Source as needed)* | **Crucial:** Make absolutely sure these files are for your **exact** phone model. |
 
 ---
 
-## Part 2: Install the Special MTK Drivers
+## Part 2: Install the Special MTK Drivers ⚙️
 
 These special drivers allow your computer to communicate with your phone while it is off.
 
@@ -48,7 +56,7 @@ These special drivers allow your computer to communicate with your phone while i
 
 ---
 
-## Part 3: Bypass Tecno Security
+## Part 3: Bypass Tecno Security 🔓
 
 We use the bypass tools to temporarily unlock your phone so we can load new software onto it.
 
@@ -61,24 +69,27 @@ We use the bypass tools to temporarily unlock your phone so we can load new soft
 
 ---
 
-## Part 4: Enter Fastboot Mode and Flash the Fix
+## Part 4: Enter Fastboot Mode and Flash the Fix 🚀
 
 Fastboot Mode is a special mode on the phone that allows you to install system files.
 
 1.  **Open V30 Tool:** Open the **MTK AUTH Bypass Tool V30**.
 2.  **Enter Fastboot:** Click the button that says **"Reboot Fastboot."**
 3.  **Keep Trying:** You may need to click the button a few times until your phone **restarts** and shows the **"Fastboot Mode"** screen.
-4.  **Use Fastboot Commands:** With your phone in Fastboot Mode, open your computer's **Command Prompt** (or PowerShell) and navigate to the folder containing your downloaded Tecno firmware files.
+4.  **Use Fastboot Commands:** With your phone in **Fastboot Mode**, open your computer's **Command Prompt** (or PowerShell) and navigate to the folder containing your downloaded Tecno firmware files.
 5.  **Flash the Files:** Use these commands one-by-one, pressing **Enter** after each one. The phone will be receiving the new files.
 
 ```bash
+# Example commands. You must flash ALL required files for your specific ROM.
+
+# Flash the boot image
 fastboot flash boot boot.img
+
+# Flash the vbmeta image
 fastboot flash vbmeta vbmeta.img
-NOTE: You will likely need to flash other files (e.g., system.img or super.img). Flash every essential file included in the firmware package that is needed by your Tecno model.
 
-Reboot: When you are done flashing all the required files, type this command to restart your phone:
+# NOTE: You will likely need to flash other essential files (e.g., system.img or super.img)
+# that are required by your Tecno model.
 
-Bash
-
+# Reboot the phone when done:
 fastboot reboot
-Your phone should now start up correctly! Be patient—the first startup may take a long time (5–10 minutes).
