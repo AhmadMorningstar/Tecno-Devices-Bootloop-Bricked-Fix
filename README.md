@@ -28,10 +28,11 @@ Here are the files and tools you need to download and have ready on your compute
 
 | Type | Item | Download Link | Notes |
 | :--- | :--- | :--- | :--- |
-| **MTK Drivers** | **Signed MTK Drivers Download & Install both** | [First](https://www.hovatek.com/redirectcode.php?link=aHR0cHM6Ly9tZWdhLm56LyMhM2g4QlNZNUohMHNmdnlydTZIbDZGc3J5VU8ydjlZaTFtbXRzRTR3cnplNjhMNHJqU0dOaw==) - [Second](https://www.hovatek.com/redirectcode.php?link=aHR0cHM6Ly9tZWdhLm56LyMhSDFrMHphNlIhRmpmaHNjT2xuVVFtdU9qLTlNbDA5MTMzLWVBVXpLTmdGMGJENUthQktvaw==) | You **must** install **both driver files** Auto and manual that come in the driver package. |
-| **Bypass Tool** | **MTK AUTH Bypass Tool V7** | **[Link 1](https://androidfilehost.com/?fid=7161016148664809945) - [Link 2](https://drive.google.com/file/d/1XElJ8yOeOJMVTJoero7dXbn7VeJq82C9/view?usp=sharing)** | Used to temporarily **crash** the phone's security. |
-| **Bypass Tool** | **MTK AUTH Bypass Tool V30** | **[Link 1](https://www.needrom.com/download/mtk-auth-bypass-tool-mabt-v30) - [Link 2](https://androidfilehost.com/?fid=17825722713688280402) - [Link 3](https://drive.google.com/file/d/1NBXKwa0MLIH_Vj_JZ4Y6ZQwsdkQUTvyZ/view?usp=sharing)** | Used to **reboot** the crashed phone into **Fastboot Mode**. |
-| **Software** | **Tecno Stock Firmware/ROM** | *Simply Search your device model You will find it surely [For KI5Q](https://www.needrom.com/download/tecno-spark-10-ki5q/)* | **Crucial:** Make absolutely sure these files are for your **exact** phone model. |
+| **MTK Drivers** | **Signed MTK Drivers** | [First](https://www.hovatek.com/redirectcode.php?link=aHR0cHM6Ly9tZWdhLm56LyMhM2g4QlNZNUohMHNmdnlydTZIbDZGc3J5VU8ydjlZaTFtbXRzRTR3cnplNjhMNHJqU0dOaw==) - [Second](https://www.hovatek.com/redirectcode.php?link=aHR0cHM6Ly9tZWdhLm56LyMhSDFrMHphNlIhRmpmaHNjT2xuVVFtdU9qLTlNbDA5MTMzLWVBVXpLTmdGMGJENUthQktvaw==) | You **must** install **both driver files** (Auto and Manual). |
+| **Driver Filter** | **LibUSB Win32** | [Link](https://sourceforge.net/projects/libusb-win32/) | Used to manage and install the correct driver filter for the bypass tools. |
+| **Bypass Tool** | **MTK AUTH Bypass Tool V7** | [Link 1](https://androidfilehost.com/?fid=7161016148664809945) - [Link 2](https://drive.google.com/file/d/1XElJ8yOeOJMVTJoero7dXbn7VeJq82C9/view?usp=sharing) | Used to temporarily **crash** the phone's security. |
+| **Bypass Tool** | **MTK AUTH Bypass Tool V30** | [Link 1](https://www.needrom.com/download/mtk-auth-bypass-tool-mabt-v30) - [Link 2](https://androidfilehost.com/?fid=17825722713688280402) - [Link 3](https://drive.google.com/file/d/1NBXKwa0MLIH_Vj_JZ4Y6ZQwsdkQUTvyZ/view?usp=sharing) | Used to **reboot** the crashed phone into **Fastboot Mode**. |
+| **Software** | **Tecno Stock Firmware/ROM** | *Simply Search your device model (e.g., [For KI5Q](https://www.needrom.com/download/tecno-spark-10-ki5q/))* | **Crucial:** Make absolutely sure these files are for your **exact** phone model. |
 
 ---
 
@@ -39,7 +40,7 @@ Here are the files and tools you need to download and have ready on your compute
 
 These special drivers allow your computer to communicate with your phone while it is off.
 
-1.  **Plug In the Phone:** Take your **bricked/bootlooping Tecno device** and plug it into a **Type-C port** on your computer using a reliable USB cable.
+1.  **Plug In the Phone:** Take your **bricked/bootlooping Tecno device** and plug it into your computer using a reliable/high quality USB cable.
 2.  **Install the Drivers:** Install **both files** from the **Signed MTK Drivers** package you downloaded.
 3.  **Open Device Manager:** Type `"Device Manager"` in the Windows search bar and open the application.
 4.  **Add Legacy Hardware:**
@@ -56,28 +57,41 @@ These special drivers allow your computer to communicate with your phone while i
 
 ---
 
-## Part 3: Bypass Tecno Security 🔓
+## Part 3: Apply the LibUSB Filter 🔌 **(Crucial Step!)**
 
-We use the bypass tools to temporarily unlock your phone so we can load new software onto it.
+This step ensures the bypass tools (V7 and V30) can correctly communicate with the phone using the drivers you just installed.
+
+1.  **Open LibUSB:** Install and open the **LibUSB Win32** application.
+2.  **Clear Filters:** Click the button that says **"Uninstall all filter"** then click **OK**. This clears any conflicting drivers.
+3.  **Install Filter:** Click the button that says **"Install Filter."**
+4.  **Select Device:** In the list of connected devices, **pick your connected Tecno device** (it may appear as "MediaTek USB Port" or similar).
+5.  **Install:** Hit **Install** and wait for the process to complete.
+6.  **Minimize:** Do **NOT** close the LibUSB application; simply **minimize it** and proceed to the next step.
+
+---
+
+## Part 4: Bypass Tecno Security 🔓
+
+We use the V7 bypass tool to temporarily crash and unlock your phone so we can load new software onto it.
 
 1.  **Open V7 Tool:** Open the **MTK AUTH Bypass Tool V7**.
-2.  **Crash the Phone:** Click the button that says **"Crash PL Only."**
-3.  **Wait for Shutdown/Success:**
-    * For **bootlooping** phones: Wait until the screen goes **off** right before the Tecno logo tries to show up again.
-    * For **bricked** phones: **Hold down the Power button** until the V7 application shows a **"Success"** message.
+* For **bootlooping** phones: Wait until the screen goes **off** right before the Tecno logo shows up again then hit the **CRASH PL ONLY** button **"NOTE: You can also hold the power button and click exactly when the device turns off before it reboots"**.
+* For **bricked** phones: hit the **CRASH PL ONLY** button on the app then **Hold down the Power button** until the V7 application shows a **"Success"** message.
+3.  **Wait for Success:**
 4.  **Close V7:** Close the V7 tool.
 
 ---
 
-## Part 4: Enter Fastboot Mode and Flash the Fix 🚀
+## Part 5: Enter Fastboot Mode and Flash the Fix 🚀
 
 Fastboot Mode is a special mode on the phone that allows you to install system files.
 
 1.  **Open V30 Tool:** Open the **MTK AUTH Bypass Tool V30**.
 2.  **Enter Fastboot:** Click the button that says **"Reboot Fastboot."**
 3.  **Keep Trying:** You may need to click the button a few times until your phone **restarts** and shows the **"Fastboot Mode"** screen.
-4.  **Use Fastboot Commands:** With your phone in **Fastboot Mode**, open your computer's **Command Prompt** (or PowerShell) and navigate to the folder containing your downloaded Tecno firmware files.
-5.  **Flash the Files:** Use these commands one-by-one, pressing **Enter** after each one. The phone will be receiving the new files.
+4.  **Don't Panic** Your Tecno may keep boot looping/bricked even after the V7 do not worry, just hit **Reboot Fastboot* in V30 and wait it out for the Bootlooping device do not disconnect, and for Bricked one hold down the power button and wait it out until the app finds your device and starts the proccess both cases should output "SUCCESS" at the app's box
+5.  **Use Fastboot Commands:** With your phone in **Fastboot Mode**, open your computer's **Command Prompt** (or PowerShell) and navigate to the folder containing your downloaded Tecno firmware files.
+6.  **Flash the Files:** Use these commands one-by-one, pressing **Enter** after each one. The phone will be receiving the new files.
 
 ```bash
 # Example commands. You must flash ALL required files for your specific ROM.
