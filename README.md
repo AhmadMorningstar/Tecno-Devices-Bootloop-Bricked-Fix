@@ -19,7 +19,7 @@ This guide provides simple, step-by-step instructions to fix Tecno devices that 
     * **Turn off Windows Defender/Antivirus** completely.
     * **Disable Driver Signature Enforcement** (A guide for this super easy step can be followed here: **[Link to Guide]**).
     * **Do not use a computer with personal or sensitive files** for this process.
-    * **Some Tecno Devices Have Custom DA(Download Agent) Check for your device here [Link](https://www.hovatek.com/forum/thread-23243.html) and if that's the case then procced with hovatek's guide to unbrick\fix bootloop on ur device.
+    * **Some Tecno Devices Have Custom DA(Download Agent) Check for your device here [Link](https://www.hovatek.com/forum/thread-23243.html) and if that's the case then procced with hovatek's guide to unbrick\fix bootloop on ur device.**
     * **Password to all files **AhmadMorningstar**
 
 ---
