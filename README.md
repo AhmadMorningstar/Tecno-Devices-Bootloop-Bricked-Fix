@@ -121,3 +121,7 @@ fastboot flash vbmeta vbmeta.img
 
 # Reboot the phone when done:
 fastboot reboot
+# if its still bootlooping/bricked repeat the entire step and then
+fastboot reboot recovery
+# then on recovery use volume buttons and power for navigation click on the Wipe/Data Factory reset and cache then reboot to system
+🎉 Success! Your phone should now start up correctly! Be patient—the first startup may take a long time (5–10 minutes).
