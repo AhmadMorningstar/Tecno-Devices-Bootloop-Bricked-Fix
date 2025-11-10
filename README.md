@@ -22,7 +22,18 @@ This guide provides simple, step-by-step instructions to fix Tecno devices that 
 
 ---
 
-## Part 1: Get Ready (Files and Tools) 📦
+## Part 1: Install ADB and Fastboot Tools 🛠️
+
+The Fastboot tool is essential for sending the new firmware files to your phone in the final steps.
+
+1.  **Download the Installer:** Download the **15 Seconds ADB Installer** from the official source: [Link to ADB Installer](https://androidmtk.com/download-15-seconds-adb-installer).
+2.  **Run Installer:** Run the downloaded executable file as admin.
+3.  **Confirm Installation:** When the Command Prompt window appears asking `Y/N?`, type **Y** and press **Enter** for every prompt to install ADB, Fastboot, and the drivers.
+4.  **Finish:** Once complete, you can safely close the window and proceed to the next part.
+
+---
+
+## Part 2: Get Ready (Files and Tools) 📦
 
 Here are the files and tools you need to download and have ready on your computer:
 
@@ -36,7 +47,7 @@ Here are the files and tools you need to download and have ready on your compute
 
 ---
 
-## Part 2: Install the Special MTK Drivers ⚙️
+## Part 3: Install the Special MTK Drivers ⚙️
 
 These special drivers allow your computer to communicate with your phone while it is off.
 
@@ -57,7 +68,7 @@ These special drivers allow your computer to communicate with your phone while i
 
 ---
 
-## Part 3: Apply the LibUSB Filter 🔌 **(Crucial Step!)**
+## Part 4: Apply the LibUSB Filter 🔌 **(Crucial Step!)**
 
 This step ensures the bypass tools (V7 and V30) can correctly communicate with the phone using the drivers you just installed.
 
@@ -70,26 +81,29 @@ This step ensures the bypass tools (V7 and V30) can correctly communicate with t
 
 ---
 
-## Part 4: Bypass Tecno Security 🔓
+## Part 5: Bypass Tecno Security 🔓
 
 We use the V7 bypass tool to temporarily crash and unlock your phone so we can load new software onto it.
 
 1.  **Open V7 Tool:** Open the **MTK AUTH Bypass Tool V7**.
-* For **bootlooping** phones: Wait until the screen goes **off** right before the Tecno logo shows up again then hit the **CRASH PL ONLY** button **"NOTE: You can also hold the power button and click exactly when the device turns off before it reboots"**.
-* For **bricked** phones: hit the **CRASH PL ONLY** button on the app then **Hold down the Power button** until the V7 application shows a **"Success"** message.
-3.  **Wait for Success:**
+2.  **Crash the Phone:** Click the button that says **"Crash PL Only."**
+    * For **bootlooping** phones: Wait until the screen goes **off** right before the Tecno logo tries to show up again, then hit the **CRASH PL ONLY** button. **(NOTE: You can also hold the power button and click exactly when the device turns off before it reboots.)**
+    * For **bricked** phones: Hit the **CRASH PL ONLY** button, then **Hold down the Power button** until the V7 application shows a **"Success"** message.
+3.  **Wait for Success:** Wait for the V7 application to confirm success.
 4.  **Close V7:** Close the V7 tool.
 
 ---
 
-## Part 5: Enter Fastboot Mode and Flash the Fix 🚀
+## Part 6: Enter Fastboot Mode and Flash the Fix 🚀
 
 Fastboot Mode is a special mode on the phone that allows you to install system files.
 
 1.  **Open V30 Tool:** Open the **MTK AUTH Bypass Tool V30**.
-2.  **Enter Fastboot:** Click the button that says **"Reboot Fastboot."**
-3.  **Keep Trying:** You may need to click the button a few times until your phone **restarts** and shows the **"Fastboot Mode"** screen.
-4.  **Don't Panic** Your Tecno may keep boot looping/bricked even after the V7 do not worry, just hit **Reboot Fastboot* in V30 and wait it out for the Bootlooping device do not disconnect, and for Bricked one hold down the power button and wait it out until the app finds your device and starts the proccess both cases should output "SUCCESS" at the app's box
+2.  **Don't Panic:** Your Tecno may still be bootlooping or remain black/bricked after the V7 crash. **Do not disconnect it.**
+3.  **Enter Fastboot:** Click the button that says **"Reboot Fastboot."**
+    * For the **bootlooping** device: Wait for the app to find your device and initiate the process.
+    * For the **bricked** device: Hold down the power button and wait until the app finds your device and starts the process.
+4.  **Wait for Success:** Keep trying and waiting until the app's output box shows **"SUCCESS"** and your phone **restarts** and shows the **"Fastboot Mode"** screen.
 5.  **Use Fastboot Commands:** With your phone in **Fastboot Mode**, open your computer's **Command Prompt** (or PowerShell) and navigate to the folder containing your downloaded Tecno firmware files.
 6.  **Flash the Files:** Use these commands one-by-one, pressing **Enter** after each one. The phone will be receiving the new files.
 
