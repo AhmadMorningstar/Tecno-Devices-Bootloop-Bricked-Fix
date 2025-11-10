@@ -30,9 +30,7 @@ Here are the files and tools you need to download and have ready on your compute
 | :--- | :--- | :--- | :--- |
 | **Drivers** | **Manual Signed MTK Drivers** | **[Link 1]** | You **must** install **both driver files** that come in the driver package. |
 | **Bypass Tool** | **MTK AUTH Bypass Tool V7** | **[link]** | Used to temporarily **crash** the phone's security. |
-| **Bypass Tool** | **MTK AUTH Bypass Tool V30** | **[Link 1 Needrom](https://www.needrom.com/download/mtk-auth-bypass-tool-mabt-v30)
-[Link 2 AndroidFileHost](https://androidfilehost.com/?fid=17825722713688280402)
-[Link 3 Google Drive](https://drive.google.com/file/d/1NBXKwa0MLIH_Vj_JZ4Y6ZQwsdkQUTvyZ/view?usp=sharing)** | Used to **reboot** the crashed phone into **Fastboot Mode**. |
+| **Bypass Tool** | **MTK AUTH Bypass Tool V30** | **[Link 1 Needrom](https://www.needrom.com/download/mtk-auth-bypass-tool-mabt-v30) - [Link 2 AndroidFileHost](https://androidfilehost.com/?fid=17825722713688280402) - [Link 3 Google Drive](https://drive.google.com/file/d/1NBXKwa0MLIH_Vj_JZ4Y6ZQwsdkQUTvyZ/view?usp=sharing)** | Used to **reboot** the crashed phone into **Fastboot Mode**. |
 | **Software** | **Tecno Stock Firmware/ROM** | *Simply Search your device model and Stock rom download you will find it surely* | **Crucial:** Make absolutely sure these files are for your **exact** phone model. |
 
 ---
