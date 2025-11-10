@@ -17,7 +17,7 @@ This guide provides simple, step-by-step instructions to fix Tecno devices that 
 * **Use a Fresh Computer:** If you run into problems, it is highly recommended to try this process on a different computer, ideally one with a **fresh install of Windows 11**.
 * **Security Check:** We will be installing special drivers and using tools that Windows might block. **It is highly recommended** to:
     * **Turn off Windows Defender/Antivirus** completely.
-    * **Disable Driver Signature Enforcement** (A guide for this super easy step can be followed here: **[Link to Youtube Guide](https://youtu.be/niMW_nCdk3w)**).
+    * **Disable Driver Signature Enforcement** (A guide for this super easy step can be followed here: **[Youtube Guide](https://youtu.be/niMW_nCdk3w)**.
     * **Do not use a computer with personal or sensitive files** for this process.
     * **Some Tecno Devices Have Custom DA(Download Agent) Check for your device here [Link](https://www.hovatek.com/forum/thread-23243.html) and if that's the case then procced with hovatek's guide to unbrick\fix bootloop on ur device.**
     * **Password to all files "**AhmadMorningstar**"**
